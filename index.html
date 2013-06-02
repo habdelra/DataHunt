@@ -53,8 +53,8 @@
                 <div class="tabbable tabs-left"> <!-- Only required for left/right tabs -->
                     <ul class="nav nav-tabs">
                         <li class="active"><a href="#gallery" class="gallery-tab" data-toggle="tab">Gallery</a></li>
-                        <li ><a href="#barchart" class="bar-tab" data-toggle="tab">Bar Chart</a></li>
-                        <li ><a href="#scatterchart" class="scatter-tab" data-toggle="tab">Scatter Chart</a></li>
+                        <li><a href="#barchart" class="bar-tab" data-toggle="tab">Bar Chart</a></li>
+                        <li><a href="#scatterchart" class="scatter-tab" data-toggle="tab">Scatter Chart</a></li>
                         <li><a href="#piechart" class="pie-tab" data-toggle="tab">Pie Chart</a></li>
                         <li><a href="#map" class="map-tab" data-toggle="tab">Map</a></li>
                         <li><a href="#table" class="table-tab" data-toggle="tab">Table</a></li>
@@ -124,22 +124,33 @@
                         </div>
                         <div class="tab-pane" id="barchart">
                             <!-- Scatter Chart Here -->
-                            <div class="chart-wrapper"> </div>
+                            <div class="tab-content-wrapper">
+                                <div class="chart-wrapper"></div>
+                                <button class="export-btn btn btn-large btn-primary" type="button">Export</button>
+                            </div>
                         </div>
                         <div class="tab-pane active" id="scatterchart">
                             <!-- Scatter Chart Here -->
-                            <div class="chart-wrapper"> </div>
+                            <div class="tab-content-wrapper">
+                                <div class="chart-wrapper"></div>
+                                <button class="export-btn btn btn-large btn-primary" type="button">Export</button>
+                            </div>
                         </div>
                         <div class="tab-pane" id="piechart">
                             <!-- Pie Chart Here -->
-                            <div class="chart-wrapper"> </div>
+                            <div class="tab-content-wrapper">
+                                <div class="chart-wrapper"></div>
+                                <button class="export-btn btn btn-large btn-primary" type="button">Export</button>
+                            </div>
                         </div>
                         <div class="tab-pane" id="map">
                             <!-- Map Here -->
-
-                            <p>Map here</p>
-
-
+                            <div class="tab-content-wrapper">
+                                <div class="map-wrapper">
+                                    <img src="img/map.png">
+                                </div>
+                                <button class="export-btn btn btn-large btn-primary" type="button">Export</button>
+                            </div>
                         </div>
                         <div class="tab-pane" id="table">
                             <!-- table Here -->
@@ -154,9 +165,6 @@
         </div>
 
 
-
-
-
         <!-- GATHER MOCKUP -->
 
 
@@ -165,16 +173,11 @@
         </div>
 
 
-
-
-
         <!-- SETUP MOCKUP -->
 
         <div class="nav-section" id="setup">
             Setup section
         </div>
-
-
 
 
     </div>

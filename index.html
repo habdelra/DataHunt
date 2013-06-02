@@ -1,35 +1,139 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
-  <meta charset="utf-8">
-  <title>DataHunt</title>
+    <meta charset="utf-8">
+    <title>DataHunt</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
 
-<div>
-    Hola
+<div class="container">
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                <!-- Be sure to leave the brand out there if you want it shown -->
+                <a class="brand" href="#">DataHunt</a>
+
+                <!-- Everything you want hidden at 940px or less, place within here -->
+                <ul class="nav">
+                    <li><a href="#setup" class="nav-setup nav-tab">Project Setup</a></li>
+                    <li><a href="#gather" class="nav-gather nav-tab">Gather</a></li>
+                    <li class="active"><a href="#report" class="nav-report nav-tab">Report</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="main-nav">
+
+
+        <!-- REPORT MOCKUP -->
+
+        <div class="nav-sction" id="report">
+            <div class="navigation-wrapper">
+                <div class="tabbable tabs-left"> <!-- Only required for left/right tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#gallery" data-toggle="tab">Gallery</a></li>
+                        <li ><a href="#barchart" data-toggle="tab">Bar Chart</a></li>
+                        <li><a href="#piechart" data-toggle="tab">Pie Chart</a></li>
+                        <li><a href="#map" data-toggle="tab">Map</a></li>
+                        <li><a href="#table" data-toggle="tab">Table</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="gallery">
+                            <!-- Gallery Here -->
+
+                            <p>Gallery Here</p>
+
+
+                        </div>
+                        <div class="tab-pane active" id="barchart">
+                            <!-- Bar Chart Here -->
+
+                            <p>Bar chart here</p>
+
+
+                        </div>
+                        <div class="tab-pane" id="piechart">
+                            <!-- Pie Chart Here -->
+
+                            <p>Pie chart here</p>
+
+
+                        </div>
+                        <div class="tab-pane" id="map">
+                            <!-- Map Here -->
+
+                            <p>Map here</p>
+
+
+                        </div>
+                        <div class="tab-pane" id="table">
+                            <!-- table Here -->
+
+                            <p>Table here</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- GATHER MOCKUP -->
+
+
+        <div class="nav-sction" id="gather">
+            Gather section
+        </div>
+
+
+
+
+
+        <!-- SETUP MOCKUP -->
+
+        <div class="nav-sction" id="setup">
+            Setup section
+        </div>
+
+
+
+
+    </div>
 </div>
 
 
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+-->
+<script src="lib/jquery/jquery-1.10.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-  -->
-  <script src="lib/jquery/jquery-1.10.1.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.js"></script>
 
+<script src="js/app.js"></script>
+<script src="js/etc/utils.js"></script>
+<script src="js/etc/constants.js"></script>
 
-  <script src="js/app.js"></script>
-  <script src="js/etc/utils.js"></script>
-  <script src="js/etc/constants.js"></script>
-
-  <script>
-      $(document).ready(function () {
+<script>
+    $(document).ready(function () {
         edesignlabs.datahunt.startApp();
-      });
-  </script>
+    });
+</script>
 
 
 </body>

@@ -10,7 +10,44 @@ var edesignlabs = edesignlabs || {};
 
         //build scatter graph
         buildScatterGraph : function (){
-            var $chartWrapper = $('#scatterchart').find('.chart-wrapper');
+            var $chartWrapper = $('#scatterchart').find('.chart-wrapper'),
+                testData = [
+                    {
+                        key: 'Ash',
+                        value: [
+                            {
+                                x: 50,
+                                y: 40,
+                                size: 1,
+                                shape: 'triange'
+                            },
+                            {
+                                x: 20,
+                                y: 50,
+                                size: 1,
+                                shape: 'triange'
+                            }
+                        ]
+                    },
+                    {
+                        key: 'Maple',
+                        value: [
+                            {
+                                x: 30,
+                                y: 20,
+                                size: 1,
+                                shape: 'circle'
+                            },
+                            {
+                                x: 25,
+                                y: 30,
+                                size: 1,
+                                shape: 'circle'
+                            }
+                        ]
+                    }
+
+                ];
             $chartWrapper.empty();
             $chartWrapper.append('<svg id="scatter-chart-svg"/>');
 
@@ -67,32 +104,20 @@ var edesignlabs = edesignlabs || {};
             var $chartWrapper = $('#piechart').find('.chart-wrapper'),
                 testdata = [
                     {
-                        key: "One",
-                        y: 5
+                        key: "Maple",
+                        y: 30
                     },
                     {
-                        key: "Two",
-                        y: 2
+                        key: "Ash",
+                        y: 20
                     },
                     {
-                        key: "Three",
-                        y: 9
+                        key: "Birch",
+                        y: 25
                     },
                     {
-                        key: "Four",
-                        y: 7
-                    },
-                    {
-                        key: "Five",
-                        y: 4
-                    },
-                    {
-                        key: "Six",
-                        y: 3
-                    },
-                    {
-                        key: "Seven",
-                        y: .5
+                        key: "Pine",
+                        y: 50
                     }
                 ];
             $chartWrapper.empty();
@@ -129,39 +154,23 @@ var edesignlabs = edesignlabs || {};
 
                 historicalBarChart = [
                     {
-                        key: "Cumulative Return",
+                        key: "Tree Amounts",
                         values: [
                             {
-                                "label": "A",
-                                "value": 29.765957771107
+                                "label": "Maple",
+                                "value": 30
                             } ,
                             {
-                                "label": "B",
-                                "value": 0
+                                "label": "Ash",
+                                "value": 20
                             } ,
                             {
-                                "label": "C",
-                                "value": 32.807804682612
+                                "label": "Birch",
+                                "value": 25
                             } ,
                             {
-                                "label": "D",
-                                "value": 196.45946739256
-                            } ,
-                            {
-                                "label": "E",
-                                "value": 0.19434030906893
-                            } ,
-                            {
-                                "label": "F",
-                                "value": 98.079782601442
-                            } ,
-                            {
-                                "label": "G",
-                                "value": 13.925743130903
-                            } ,
-                            {
-                                "label": "H",
-                                "value": 5.1387322875705
+                                "label": "Pine",
+                                "value": 50
                             }
                         ]
                     }
@@ -240,6 +249,34 @@ var edesignlabs = edesignlabs || {};
             showNavTab('#landing');
 
             this.wireUpReportTabEvents();
+
+            //setup tooltips
+            $('.gallery-tab').tooltip({
+                placement: 'left',
+                title: 'Gallery'
+            });
+            $('.bar-tab').tooltip({
+                placement: 'left',
+                title: 'Bar Chart'
+            });
+            $('.scatter-tab').tooltip({
+                placement: 'left',
+                title: 'Scatter Chart'
+            });
+            $('.pie-tab').tooltip({
+                placement: 'left',
+                title: 'Pie Chart'
+            });
+            $('.map-tab').tooltip({
+                placement: 'left',
+                title: 'Map'
+            });
+            $('.table-tab').tooltip({
+                placement: 'left',
+                title: 'Table'
+            });
+
+
         }
 
 

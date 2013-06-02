@@ -10,3 +10,20 @@
   overflow-y: auto;
   height: 600px;
 }
+.carousel-inner .item {
+  position: relative;
+}
+.carousel-inner .item .meta-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+}
+.carousel-inner .item .meta-wrapper .metadata {
+  background: white;
+  border-radius: 6px;
+  opacity: 0.7;
+  margin: 10px 0px;
+  padding: 10px;
+  min-width: 300px;
+  font-size: 30px;
+}

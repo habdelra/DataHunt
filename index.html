@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>DataHunt</title>
+
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.css"/>
+    <!--<link href="lib/flat-ui/css/flat-ui.css" rel="stylesheet">-->
+
     <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
@@ -22,13 +25,13 @@
                 </a>
 
                 <!-- Be sure to leave the brand out there if you want it shown -->
-                <a class="brand" href="#">DataHunt</a>
+                <a class="brand nav-tab" href="#landing">DataHunt</a>
 
                 <!-- Everything you want hidden at 940px or less, place within here -->
-                <ul class="nav">
+                <ul class="nav nav-menu">
                     <li><a href="#setup" class="nav-setup nav-tab">Project Setup</a></li>
                     <li><a href="#gather" class="nav-gather nav-tab">Gather</a></li>
-                    <li class="active"><a href="#report" class="nav-report nav-tab">Report</a></li>
+                    <li><a href="#report" class="nav-report nav-tab">Report</a></li>
                 </ul>
 
             </div>
@@ -36,10 +39,15 @@
     </div>
     <div class="main-nav">
 
+        <!-- LANDING PAGE MOCKUP -->
+        <div class="nav-section" id="landing">
+            <p>Landing Page Here</p>
+        </div>
+
 
         <!-- REPORT MOCKUP -->
 
-        <div class="nav-sction" id="report">
+        <div class="nav-section" id="report">
             <div class="navigation-wrapper">
                 <div class="tabbable tabs-left"> <!-- Only required for left/right tabs -->
                     <ul class="nav nav-tabs">
@@ -97,7 +105,7 @@
         <!-- GATHER MOCKUP -->
 
 
-        <div class="nav-sction" id="gather">
+        <div class="nav-section" id="gather">
             Gather section
         </div>
 
@@ -107,7 +115,7 @@
 
         <!-- SETUP MOCKUP -->
 
-        <div class="nav-sction" id="setup">
+        <div class="nav-section" id="setup">
             Setup section
         </div>
 
@@ -123,7 +131,10 @@
 -->
 <script src="lib/jquery/jquery-1.10.1.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
-
+<!--
+<script src="lib/flat-ui/js/flatui-checkbox.js"></script>
+<script src="lib/flat-ui/js/flatui-radio.js"></script>
+-->
 
 <script src="js/app.js"></script>
 <script src="js/etc/utils.js"></script>

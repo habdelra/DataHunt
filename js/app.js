@@ -14,7 +14,7 @@ var edesignlabs = edesignlabs || {};
                 if (!tab) return;
                 var $selectedTab = $(tab);
                 if (!$selectedTab.is(':visible')) {
-                    $('.nav-sction').hide();
+                    $('.nav-section').hide();
                     $selectedTab.show();
                 }
             };
@@ -24,10 +24,11 @@ var edesignlabs = edesignlabs || {};
                 var $this = $(this),
                     selectedTab = $this.attr('href');
                 showNavTab(selectedTab);
-
+                $('.nav-menu').find('.active').removeClass('active');
+                !$this.hasClass('brand') && $this.parent().addClass('active');
             });
-            $('.nav-sction').hide();
-            showNavTab('#report');
+            $('.nav-section').hide();
+            showNavTab('#landing');
         }
 
 
